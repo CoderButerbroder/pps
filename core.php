@@ -130,7 +130,7 @@ class Core {
                     $upd_profile->bindParam(':phone', $phone, PDO::PARAM_INT);
                     $temp = $upd_profile->execute();
                     $count = $upd_profile->rowCount();
-            return json_encode(array('response' => false, 'description' => 'Успешная верификация телефона'), JSON_UNESCAPED_UNICODE);
+            return json_encode(array('response' => true, 'description' => 'Успешная верификация телефона'), JSON_UNESCAPED_UNICODE);
         } else {
             return json_encode(array('response' => false, 'description' => 'Не верный код '), JSON_UNESCAPED_UNICODE);
         }

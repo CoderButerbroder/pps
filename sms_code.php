@@ -132,7 +132,7 @@ body {
                  dataType: 'json',
                  success: function (result) {
                      if (result.response) {
-                             window.location.href = 'https://ivanovpps.full-data.ru/actions/verify_email.php';
+                             window.location.href = 'https://ivanovpps.full-data.ru/email_reg.php';
                      } else {
                          alert(result.description);
                          $("#btn_send_code").removeAttr('disabled');
